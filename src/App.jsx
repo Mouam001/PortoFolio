@@ -1,9 +1,16 @@
+import MainLayout from "./layouts/MainLayout";
+import Home from "./pages/Home/index.jsx";
+import About from "./pages/About/index.jsx";
+
 export default function App() {
     return (
-        <div className="min-h-screen flex items-center justify-center bg-slate-100">
-            <h1 className="text-3xl font-bold text-blue-600">
-                Tailwind fonctionne 🚀
-            </h1>
-        </div>
+        <MainLayout>
+            <section className="min-h-screen flex items-center justify-center">
+                <h1 className="text-4xl font-bold">
+                    <Home />
+                    <About/>
+                </h1>
+            </section>
+        </MainLayout>
     );
 }
