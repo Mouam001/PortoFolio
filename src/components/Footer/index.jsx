@@ -2,10 +2,10 @@ import FooterView from "./view";
 
 export default function Footer() {
     const links = [
-        { label: "Contact", href: "/contact" },
-        { label: "Skills", href: "/skills" },
-        { label: "Formations", href: "/formations" },
-        { label: "Vie", href: "voyages" },
+        { label: "Contact", to: "/contact" },
+        { label: "Skills", to: "/skills" },
+        { label: "Formations", to: "/formations" },
+        { label: "Vie", to: "/voyages" },
     ];
 
     const socials = [

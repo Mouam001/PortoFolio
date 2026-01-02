@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 import "./footer.css";
 
 export default function FooterView({ links, socials }) {
@@ -13,9 +14,9 @@ export default function FooterView({ links, socials }) {
                 {/* Center */}
                 <nav className="footer__links">
                     {links.map((l) => (
-                        <a key={l.label} href={l.href}>
+                        <Link key={l.label} to={l.to}>
                             {l.label}
-                        </a>
+                        </Link>
                     ))}
                 </nav>
 
