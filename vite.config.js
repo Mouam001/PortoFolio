@@ -3,8 +3,8 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/PortoFolio/',
   plugins: [react()],
-  base: "/PortoFolio",
   test :{
     coverage: {
       all: true,
