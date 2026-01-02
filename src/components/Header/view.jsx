@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./header.css";
 
 export default function HeaderView({
@@ -9,26 +10,26 @@ export default function HeaderView({
     return (
         <header className="header">
             <div className="header__container">
-                {/* Logo */}
-                <div className="header__logo">Mouammar Soulé</div>
+                <div className="header__logo">
+                    <Link to="/">Mouammar Soulé</Link>
+                </div>
 
-                {/* Desktop menu */}
+                {/* Desktop */}
                 <nav className="header__nav">
-                    {navItems.slice(0, -1).map((item) => (
-                        <a key={item.label} href={item.href}>
+                    {navItems.map(item => (
+                        <Link key={item.label} to={item.to}>
                             {item.label}
-                        </a>
+                        </Link>
                     ))}
-                    <a href="#contact" className="header__cta">
+                    <Link to="/contact" className="header__cta">
                         Contact
-                    </a>
+                    </Link>
                 </nav>
 
                 {/* Burger */}
                 <button
                     className={`burger ${isOpen ? "is-open" : ""}`}
                     onClick={toggleMenu}
-                    aria-label="Menu"
                 >
                     <span />
                     <span />
@@ -36,16 +37,16 @@ export default function HeaderView({
                 </button>
             </div>
 
-            {/* Mobile menu */}
+            {/* Mobile */}
             <div className={`mobile-menu ${isOpen ? "open" : ""}`}>
-                {navItems.map((item) => (
-                    <a
+                {navItems.map(item => (
+                    <Link
                         key={item.label}
-                        href={item.href}
+                        to={item.to}
                         onClick={closeMenu}
                     >
                         {item.label}
-                    </a>
+                    </Link>
                 ))}
             </div>
         </header>

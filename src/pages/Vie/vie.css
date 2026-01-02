@@ -1,0 +1,60 @@
+.vie {
+    padding: 120px 28px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.vie h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 48px;
+}
+
+.vie__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.vie-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vie-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15);
+}
+
+.vie-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.vie-card__content {
+    padding: 20px;
+}
+
+.vie-card__content h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.vie-card__content p {
+    font-size: 14px;
+    color: #475569;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .vie__grid {
+        grid-template-columns: 1fr;
+    }
+}

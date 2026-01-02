@@ -1,0 +1,125 @@
+.formations {
+    padding: 120px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-inline: 28px;
+}
+
+.formations__header {
+    max-width: 600px;
+    margin-bottom: 80px;
+}
+
+.formations__header h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.formations__header p {
+    color: #475569;
+    line-height: 1.6;
+}
+
+/* TIMELINE */
+.timeline {
+    position: relative;
+}
+
+.timeline__line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: #2563eb;
+    transform: translateX(-50%);
+}
+
+.timeline__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.timeline__item.left .timeline__content {
+    padding-right: 48px;
+    text-align: right;
+}
+
+.timeline__item.right .timeline__content {
+    grid-column: 2;
+    padding-left: 48px;
+}
+
+.timeline__content {
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.timeline__period {
+    display: inline-block;
+    background: #eff6ff;
+    color: #2563eb;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.timeline__content h3 {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.timeline__content h4 {
+    font-size: 15px;
+    color: #2563eb;
+    margin-bottom: 12px;
+}
+
+.timeline__content p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #475569;
+    margin-bottom: 12px;
+}
+
+.timeline__content a {
+    color: #2563eb;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.timeline__image img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .timeline__line {
+        left: 0;
+    }
+
+    .timeline__item {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline__item.left .timeline__content,
+    .timeline__item.right .timeline__content {
+        text-align: left;
+        padding: 24px;
+        grid-column: auto;
+    }
+
+    .timeline__image {
+        margin-top: 24px;
+    }
+}
