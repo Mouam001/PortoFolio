@@ -29,7 +29,7 @@ export default function Formations() {
             description:
                 "Première année en génie informatique avec acquisition des bases en algorithmique, programmation, systèmes informatiques et mathématiques appliquées.",
             image: udcImg,
-            link: "https://www.univ-comores.km",
+            link: "https://udc.slashz.net/",
         },
     ];
 
