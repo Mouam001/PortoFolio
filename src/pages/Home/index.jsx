@@ -4,9 +4,14 @@ import profileImg from "../../assets/moummar.png";
 export default function Home() {
     const profile = {
         name: "Mouammar Soulé",
-        role: "Développeur Full Stack",
-        location: "Calais, France",
+        role: "Développeur et Téchnicien Informatique",
+        location: "Calais, France, Université du Littoral Côte d'Opale (ULCO)",
         image: profileImg,
+        associationRole: {
+            role: "Président de l'Association",
+            name: "EtudiaGo",
+            url: "https://www.facebook.com/Etudiago/",
+        },
     };
 
     const tools = [
@@ -52,5 +57,5 @@ export default function Home() {
         },
     ];
 
-    return <HomeView profile={profile} tools={tools} />;
+    return <HomeView profile={profile} tools={tools}/>;
 }

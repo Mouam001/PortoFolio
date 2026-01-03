@@ -59,5 +59,5 @@ export default function Vie() {
         },
     ];
 
-    return <VieView activities={activities} />;
+    return <VieView activities={activities}/>;
 }

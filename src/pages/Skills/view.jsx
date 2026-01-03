@@ -1,6 +1,6 @@
 import "./skills.css";
 
-export default function SkillsView({ skills, tags }) {
+export default function SkillsView({skills, tags}) {
     return (
         <section id="skills" className="skills">
             <div className="skills__header">
@@ -12,9 +12,9 @@ export default function SkillsView({ skills, tags }) {
             </div>
 
             <div className="skills__grid">
-                <SkillCard title="Frontend" items={skills.frontend} />
-                <SkillCard title="Backend" items={skills.backend} />
-                <SkillCard title="Outils" items={skills.tools} />
+                <SkillCard title="Frontend" items={skills.frontend}/>
+                <SkillCard title="Backend" items={skills.backend}/>
+                <SkillCard title="Outils" items={skills.tools}/>
             </div>
 
             <div className="skills__tags">
@@ -29,7 +29,7 @@ export default function SkillsView({ skills, tags }) {
     );
 }
 
-function SkillCard({ title, items }) {
+function SkillCard({title, items}) {
     return (
         <div className="skill-card">
             <h4>{title}</h4>
@@ -43,7 +43,7 @@ function SkillCard({ title, items }) {
                     <div className="skill__bar">
                         <div
                             className="skill__progress"
-                            style={{ width: `${skill.level}%` }}
+                            style={{width: `${skill.level}%`}}
                         />
                     </div>
                 </div>

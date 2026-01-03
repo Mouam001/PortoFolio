@@ -1,14 +1,25 @@
 import "./home.css";
 
-export default function HomeView({ profile, tools }) {
+export default function HomeView({profile, tools}) {
     return (
         <section id="home" className="home">
             <div className="home__container">
                 {/* LEFT */}
                 <div className="home__profile">
-                    <img src={profile.image} alt={profile.name} />
+                    <img src={profile.image} alt={profile.name}/>
                     <h3>{profile.name}</h3>
                     <span>{profile.role}</span>
+                    <span>
+    {profile.associationRole.role}{" "}
+                        <a
+                            href={profile.associationRole.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="home__association-link"
+                        >
+        {profile.associationRole.name}
+    </a>
+</span>
                     <small>{profile.location}</small>
                 </div>
 

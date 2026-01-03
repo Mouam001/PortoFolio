@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import "./footer.css";
 
-export default function FooterView({ links, socials }) {
+export default function FooterView({links, socials}) {
     return (
         <footer className="footer">
             <div className="footer__top">
@@ -34,7 +34,7 @@ export default function FooterView({ links, socials }) {
                             {s.icon === "x" && "✕"}
                             {s.icon === "instagram" && "◎"}
                             {s.icon === "linkedin" && "in"}
-                            {s.icon === "youtube" && "▶"}
+                            {s.icon === "facebook" && "𐌅"}
                             {s.icon === "github" && "⌂"}
                         </a>
                     ))}

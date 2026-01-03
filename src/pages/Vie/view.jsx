@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import "./vie.css";
 
-export default function VieView({ activities }) {
+export default function VieView({activities}) {
     return (
         <section id="vie" className="vie">
             <h2>Vie & Centres d’intérêt</h2>
@@ -10,7 +10,7 @@ export default function VieView({ activities }) {
                 {activities.map((item) => {
                     const CardContent = (
                         <>
-                            <img src={item.image} alt={item.title} />
+                            <img src={item.image} alt={item.title}/>
                             <div className="vie-card__content">
                                 <h3>{item.title}</h3>
                                 <p>{item.description}</p>

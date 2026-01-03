@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import {useRef, useState} from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
 
@@ -53,13 +53,13 @@ export default function ContactView() {
                 {/* RIGHT */}
                 <form ref={formRef} onSubmit={sendEmail} className="contact__form">
                     <div className="form-row">
-                        <input name="first_name" placeholder="Prénom *" required />
-                        <input name="last_name" placeholder="Nom *" required />
+                        <input name="first_name" placeholder="Prénom *" required/>
+                        <input name="last_name" placeholder="Nom *" required/>
                     </div>
 
                     <div className="form-row">
-                        <input type="email" name="email" placeholder="Email *" required />
-                        <input name="phone" placeholder="Téléphone" />
+                        <input type="email" name="email" placeholder="Email *" required/>
+                        <input name="phone" placeholder="Téléphone"/>
                     </div>
 
                     <div className="form-row">
@@ -71,7 +71,7 @@ export default function ContactView() {
                             <option value="Autre">Autre</option>
                         </select>
 
-                        <input name="company" placeholder="Nom de l'entreprise" />
+                        <input name="company" placeholder="Nom de l'entreprise"/>
                     </div>
 
                     <input

@@ -1,45 +1,66 @@
 import AboutView from "./view";
-import project1 from "../../assets/game.jpeg";
-import project2 from "../../assets/moummar.png";
-import project3 from "../../assets/game.jpeg";
-
+import gameUser from "../../assets/game.jpeg";
+import hospital from "../../assets/hospital.jpg";
+import inventaire from "../../assets/IDEA.png";
+import finance from "../../assets/finance.png";
+import project from "../../assets/moummar.png";
 export default function About() {
     const about = {
         title: "À Propos de Moi",
         paragraphs: [
-            "Passionné par le développement logiciel depuis plus de 5 ans, je me spécialise dans la création d'applications web modernes et performantes.",
-            "Mon expertise couvre aussi bien le développement frontend avec React et TypeScript que le backend avec .NET et Node.js.",
-            "Je crois fermement en l'importance d'un code propre, maintenable et bien testé.",
-            "Toujours à la recherche de nouveaux défis, je m'intéresse aux architectures cloud et aux bonnes pratiques DevOps."
+            "Passionné par la téchnologie et le monde du développement . " +
+            "Étudiant en Master 2 I2L (Ingénierie du Logiciel Libre), je suis en alternance chez IDEA en tant que technicien informatique et développeur d’applications."+
+            " J’interviens notamment sur le développement de solutions via la Power Platform."
         ],
+
     };
 
     const projects = [
         {
-            title: "E-Commerce Platform",
+            title: "Application Web – Jeux Vidéo",
             description:
-                "Plateforme de commerce en ligne moderne avec React, Node.js et PostgreSQL.",
-            image: project1,
-            tags: ["React", "Node.js", "PostgreSQL", "Stripe"],
-            link: "https://github.com/example/ecommerce",
+                "Application web permettant de consulter le top des jeux, rechercher des titres, afficher les détails, gérer les comptes (connexion/inscription), les favoris, et intégrer un formulaire de contact avec envoi d’e-mails via EmailJS.",
+            image: gameUser,
+            tags: ["React", "Vite", "API", "Tailwind CSS", "EmailJS"],
+            link: "https://github.com/Mouam001/GamesUsers",
         },
         {
-            title: "Task Management App",
+            title: "Gestion Financière",
             description:
-                "Application collaborative avec temps réel et notifications.",
-            image: project2,
-            tags: ["TypeScript", "Next.js", "Socket.io", "MongoDB"],
-            link: "https://github.com/example/tasks",
+                "Application permettant de suivre les dépenses et revenus, visualiser les données, gérer des relevés et suivre des opérations, avec persistance en SQLite et accès à des APIs (interne & OBP).",
+            image: finance,
+            tags: [".NET 8", "Entity Framework Core", "SQLite", "API"],
+            link: "https://github.com/Mouam001/gestion-finance",
         },
         {
-            title: "API REST Documentation",
+            title: "Projet Agile – Gestion Hopital (24h)",
             description:
-                "Système de documentation automatique pour APIs REST.",
-            image: project3,
-            tags: [".NET", "C#", "Swagger", "Docker"],
-            link: "https://github.com/example/api-doc",
+                "Développement en 24h d’une application web pour saisir et consulter des indicateurs de santé (poids, IMC, sommeil, fréquence cardiaque…), gérer plusieurs unités et assurer la sécurité des données, dans un contexte agile.",
+            image: hospital,
+            tags: ["React", ".NET 8", "API", "Agile", "PostgreSQL"],
+            link: "https://github.com/Mouam001/Gestion-hospital",
         },
-    ];
+        {
+            title: "Inventaire du parc informatique (Entreprise)",
+            description:
+                "Application interne pour assurer le suivi du parc matériel : inventaire, gestion des équipements, consultation de certains identifiants, remontée d’incidents et maintien de la base matériel.",
+            image: inventaire,
+            tags: ["PowerApps", "PowerAutomate", "SharePoint (BDD)", "Json"],
+            link: null,
+        },
 
-    return <AboutView about={about} projects={projects} />;
+        {
+            title: "Suivi d’activité – Master Management (Entreprise)",
+            description:
+                "Application de suivi opérationnel : gestion des cuves, suivi des pourcentages de lignes, identification des éléments à évacuer, planification des opérations de nettoyage.",
+            image: inventaire,
+            tags: ["PowerApps", "PowerAutomate", "SharePoint (BDD)", "Json"],
+            href: "https://www.groupe-idea.com/fr",
+            link:null,
+        },
+        
+    ];
+    
+
+    return <AboutView about={about} projects={projects}/>;
 }

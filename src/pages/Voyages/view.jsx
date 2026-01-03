@@ -1,6 +1,6 @@
 import "./voyages.css";
 
-export default function VoyagesView({ trips }) {
+export default function VoyagesView({trips}) {
     return (
         <section className="voyages">
             <h2>Mes Voyages</h2>
@@ -14,7 +14,7 @@ export default function VoyagesView({ trips }) {
                         rel="noopener noreferrer"
                         className="voyage-card"
                     >
-                        <img src={trip.image} alt={trip.country} />
+                        <img src={trip.image} alt={trip.country}/>
                         <div className="voyage-card__content">
                             <h3>{trip.country}</h3>
                             <p>{trip.description}</p>

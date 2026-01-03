@@ -1,6 +1,6 @@
 import "./formations.css";
 
-export default function FormationsView({ formations }) {
+export default function FormationsView({formations}) {
     return (
         <section id="formations" className="formations">
             <div className="formations__header">
@@ -30,12 +30,12 @@ export default function FormationsView({ formations }) {
                         </div>
 
                         <div className="timeline__image">
-                            <img src={item.image} alt={item.school} />
+                            <img src={item.image} alt={item.school}/>
                         </div>
                     </div>
                 ))}
 
-                <div className="timeline__line" />
+                <div className="timeline__line"/>
             </div>
         </section>
     );

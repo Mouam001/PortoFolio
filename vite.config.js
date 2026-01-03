@@ -3,15 +3,15 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  base: '/PortoFolio/',
-  test :{
-    coverage: {
-      all: true,
-      reporter: ['lcov','text', 'html', 'text-summary'],
+    plugins: [react()],
+    base: '/PortoFolio/',
+    test: {
+        coverage: {
+            all: true,
+            reporter: ['lcov', 'text', 'html', 'text-summary'],
+        },
+        css: true,
+        environment: 'jsdom',
+        globals: true,
     },
-    css :true,
-    environment: 'jsdom',
-    globals: true,
-  },
 })

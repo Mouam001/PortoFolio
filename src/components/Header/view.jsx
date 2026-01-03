@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import "./header.css";
 
 export default function HeaderView({
@@ -31,9 +31,9 @@ export default function HeaderView({
                     className={`burger ${isOpen ? "is-open" : ""}`}
                     onClick={toggleMenu}
                 >
-                    <span />
-                    <span />
-                    <span />
+                    <span/>
+                    <span/>
+                    <span/>
                 </button>
             </div>
 

@@ -1,6 +1,6 @@
 import "./about.css";
 
-export default function AboutView({ about, projects }) {
+export default function AboutView({about, projects}) {
     return (
         <section id="about-me" className="about">
             {/* TEXTE */}
@@ -18,7 +18,7 @@ export default function AboutView({ about, projects }) {
                 <div className="projects__grid">
                     {projects.map((project) => (
                         <div key={project.title} className="project-card">
-                            <img src={project.image} alt={project.title} />
+                            <img src={project.image} alt={project.title}/>
 
                             <div className="project-card__content">
                                 <h4>{project.title}</h4>

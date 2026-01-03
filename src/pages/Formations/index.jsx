@@ -33,5 +33,5 @@ export default function Formations() {
         },
     ];
 
-    return <FormationsView formations={formations} />;
+    return <FormationsView formations={formations}/>;
 }

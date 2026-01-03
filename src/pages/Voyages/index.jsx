@@ -47,5 +47,5 @@ export default function Voyages() {
         },
     ];
 
-    return <VoyagesView trips={trips} />;
+    return <VoyagesView trips={trips}/>;
 }
