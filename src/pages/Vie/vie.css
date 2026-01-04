@@ -4,37 +4,57 @@
     margin: 0 auto;
 }
 
-.vie h2 {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 48px;
+.vie__header {
+    max-width: 700px;
+    margin-bottom: 56px;
 }
 
+.vie__header h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.vie__header p {
+    font-size: 16px;
+    color: #64748b;
+}
+
+/* GRID */
 .vie__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
 }
 
+/* CARD */
 .vie-card {
-    background: #fff;
-    border-radius: 16px;
+    background: #0f172a;
+    border-radius: 18px;
     overflow: hidden;
-    text-decoration: none;
-    color: inherit;
-    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .vie-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55);
 }
 
-.vie-card img {
-    width: 100%;
+.vie-card__image {
     height: 200px;
+    overflow: hidden;
+}
+
+.vie-card__image img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.vie-card:hover img {
+    transform: scale(1.05);
 }
 
 .vie-card__content {
@@ -45,14 +65,16 @@
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 8px;
+    color: #e5e7eb;
 }
 
 .vie-card__content p {
     font-size: 14px;
-    color: #475569;
+    line-height: 1.6;
+    color: #94a3b8;
 }
 
-/* Responsive */
+/* RESPONSIVE */
 @media (max-width: 900px) {
     .vie__grid {
         grid-template-columns: 1fr;

@@ -1,63 +1,58 @@
 import VieView from "./view";
 
-import associativeImg from "../../assets/vie-associative.jpg";
-import sportImg from "../../assets/sport.jpg";
-import musicImg from "../../assets/music.jpg";
-import travelImg from "../../assets/voyages.jpg";
-import learningImg from "../../assets/learning.jpg";
-import ecoImg from "../../assets/eco.jpg";
+import associativeImg from "../../assets/Logo.jpg";
+import sportImg from "../../assets/sport.webp";
+import musicImg from "../../assets/moummar.png";
+import travelImg from "../../assets/voyage.jpg";
+import learningImg from "../../assets/veille.jpg";
+import ecoImg from "../../assets/moummar.png";
 
 export default function Vie() {
     const activities = [
         {
-            title: "Vie Associative",
+            id: "association",
+            title: "Vie associative",
             description:
-                "Engagement bénévole et transmission des connaissances aux jeunes.",
+                "Engagement bénévole auprès des jeunes, axé sur l’accompagnement, l’éducation et la transmission des connaissances.",
             image: associativeImg,
-            link: "https://www.example-association.org",
-            external: true,
         },
         {
+            id: "sport",
             title: "Sport & Bien-être",
             description:
-                "Course à pied, yoga et défis sportifs pour l'équilibre personnel.",
+                "Discipline personnelle à travers le sport, la régularité et le dépassement de soi.",
             image: sportImg,
-            link: "#",
-            external: false,
         },
         {
+            id: "music",
             title: "Musique",
             description:
-                "Guitariste amateur, participation à des jams et projets musicaux.",
+                "Pratique musicale comme espace de créativité, d’expression personnelle et de partage.",
             image: musicImg,
-            link: "#",
-            external: false,
         },
         {
+            id: "learning",
             title: "Lecture & Apprentissage",
             description:
-                "Veille technologique, science-fiction et développement personnel.",
+                "Veille technologique, lecture et apprentissage continu pour nourrir la curiosité intellectuelle.",
             image: learningImg,
-            link: "#",
-            external: false,
         },
         {
+            id: "travel",
             title: "Voyages",
             description:
-                "Découverte de cultures, pays et nouvelles pratiques professionnelles.",
+                "Découverte culturelle et ouverture internationale à travers différents pays et environnements.",
             image: travelImg,
-            link: "/voyages",
-            external: false,
+            route: "/vie/voyages",
         },
         {
-            title: "Engagement Environnemental",
+            id: "eco",
+            title: "Engagement environnemental",
             description:
-                "Actions locales pour un développement durable et responsable.",
+                "Sensibilité aux enjeux écologiques et participation à des actions locales responsables.",
             image: ecoImg,
-            link: "#",
-            external: false,
         },
     ];
 
-    return <VieView activities={activities}/>;
+    return <VieView activities={activities} />;
 }

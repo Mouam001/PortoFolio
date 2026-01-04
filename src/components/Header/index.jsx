@@ -9,7 +9,7 @@ export default function Header() {
         {label: "About Me", to: "/about"},
         {label: "Formations", to: "/formations"},
         {label: "Skills", to: "/skills"},
-        {label: "Vie", to: "/voyages"},
+        {label: "Vie", to: "/vie"},
         {label: "Contact", to: "/contact"},
 
     ];
