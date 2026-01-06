@@ -1,44 +1,58 @@
 import "./home.css";
 
-export default function HomeView({profile, tools}) {
+export default function HomeView({ profile }) {
     return (
-        <section id="home" className="home">
+        <section className="home">
+            {/* Background animé */}
+            <div className="home__background" />
+
             <div className="home__container">
                 {/* LEFT */}
-                <div className="home__profile">
-                    <img src={profile.image} alt={profile.name}/>
-                    <h3>{profile.name}</h3>
-                    <span>{profile.role}</span>
-                    <span>
-    {profile.associationRole.role}{" "}
+                <div className="home__content">
+                    <span className="home__badge">
+                        ⚡ {profile.availability}
+                    </span>
+
+                    <span className="home__eyebrow">
+                        {profile.role}
+                    </span>
+
+                    <h1 className="home__name">
+                        {profile.name.split(" ")[0]}{" "}
+                        <span>{profile.name.split(" ")[1]}</span>
+                    </h1>
+
+                    <p className="home__description">
+                        {profile.description}
+                    </p>
+
+                    <div className="home__actions">
                         <a
-                            href={profile.associationRole.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="home__association-link"
+                            href={profile.cv}
+                            download
+                            className="btn btn--ghost"
                         >
-        {profile.associationRole.name}
-    </a>
-</span>
-                    <small>{profile.location}</small>
+                            Télécharger le CV
+                        </a>
+                    </div>
+
+                    <div className="home__meta">
+                        <span>📍 {profile.location}</span>
+                    </div>
                 </div>
 
                 {/* RIGHT */}
-                <div className="home__content">
-                    <h2>Mes Outils & Plateformes</h2>
-                    <p>
-                        Les technologies et plateformes que j’utilise au quotidien pour
-                        créer des solutions innovantes.
-                    </p>
+                <div className="home__visual">
+                    <div className="home__photoWrap">
+                        <img
+                            src={profile.image}
+                            alt={profile.name}
+                        />
 
-                    <div className="home__tools">
-                        {tools.map((tool) => (
-                            <div key={tool.title} className="tool-card">
-                                <div className="tool-card__icon">{tool.icon}</div>
-                                <h4>{tool.title}</h4>
-                                <p>{tool.description}</p>
-                            </div>
-                        ))}
+                        <div className="home__experience">
+                            <strong>{profile.experience}</strong>
+                            <span>d’expérience</span>
+                        </div>
                     </div>
                 </div>
             </div>

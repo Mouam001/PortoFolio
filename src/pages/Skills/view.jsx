@@ -1,53 +1,51 @@
 import "./skills.css";
 
-export default function SkillsView({skills, tags}) {
+export default function SkillsView({ categories, links }) {
     return (
         <section id="skills" className="skills">
-            <div className="skills__header">
-                <h2>Compétences</h2>
+            <header className="skills__header">
+                <h2>Compétences Techniques</h2>
                 <p>
-                    Un aperçu de mes compétences techniques et des technologies que je
-                    maîtrise.
+                    Un aperçu des technologies et méthodologies que j’utilise
+                    pour concevoir des applications performantes et maintenables.
                 </p>
-            </div>
+            </header>
 
             <div className="skills__grid">
-                <SkillCard title="Frontend" items={skills.frontend}/>
-                <SkillCard title="Backend" items={skills.backend}/>
-                <SkillCard title="Outils" items={skills.tools}/>
+                {categories.map((cat) => (
+                    <div key={cat.title} className="skills-card">
+                        <div className="skills-card__title">
+                            <span className="skills-card__icon">{cat.icon}</span>
+                            <h3>{cat.title}</h3>
+                        </div>
+
+                        <ul>
+                            {cat.items.map((item) => (
+                                <li key={item}>{item}</li>
+                            ))}
+                        </ul>
+                    </div>
+                ))}
             </div>
 
-            <div className="skills__tags">
-                <h3>Technologies Maîtrisées</h3>
-                <div className="tags">
-                    {tags.map((tag) => (
-                        <span key={tag}>{tag}</span>
+            <div className="skills__links">
+                <h3>Outils & Plateformes</h3>
+
+                <div className="skills__links-grid">
+                    {links.map((link) => (
+                        <a
+                            key={link.label}
+                            href={link.url}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="skills-link"
+                        >
+                            <span className="skills-link__icon">{link.icon}</span>
+                            <span className="skills-link__label">{link.label}</span>
+                        </a>
                     ))}
                 </div>
             </div>
         </section>
-    );
-}
-
-function SkillCard({title, items}) {
-    return (
-        <div className="skill-card">
-            <h4>{title}</h4>
-
-            {items.map((skill) => (
-                <div key={skill.name} className="skill">
-                    <div className="skill__top">
-                        <span>{skill.name}</span>
-                        <span>{skill.level}%</span>
-                    </div>
-                    <div className="skill__bar">
-                        <div
-                            className="skill__progress"
-                            style={{width: `${skill.level}%`}}
-                        />
-                    </div>
-                </div>
-            ))}
-        </div>
     );
 }

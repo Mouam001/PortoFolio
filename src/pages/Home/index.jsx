@@ -1,61 +1,22 @@
 import HomeView from "./view";
-import profileImg from "../../assets/moummar.png";
+import profileImg from "../../assets/image.png";
+import cvFile from "../../assets/cv.pdf";
 
 export default function Home() {
     const profile = {
         name: "Mouammar Soulé",
-        role: "Développeur et Téchnicien Informatique",
-        location: "Calais, France, Université du Littoral Côte d'Opale (ULCO)",
+        role: "Développeur & Technicien Informatique",
+        availability: "Disponible pour nouvelles opportunités",
+        description: `
+Je développe des applications web et des outils métier pensés pour durer.
+En alternance chez IDEA, j’interviens sur des solutions concrètes mêlant
+développement applicatif, automatisation et qualité logicielle via la Power Platform.
+        `,
+        location: "Calais, France — ULCO",
+        experience: "plus de 2 ans d’expérience",
         image: profileImg,
-        associationRole: {
-            role: "Président de l'Association",
-            name: "EtudiaGo",
-            url: "https://www.facebook.com/Etudiago/",
-        },
+        cv: cvFile,
     };
 
-    const tools = [
-        {
-            title: "JetBrains",
-            description: "IDE professionnel pour développement",
-            icon: "</>",
-        },
-        {
-            title: "VS Code",
-            description: "Éditeur de code polyvalent",
-            icon: "</>",
-        },
-        {
-            title: "GitHub",
-            description: "Hébergement et versioning de code",
-            icon: "⌂",
-        },
-        {
-            title: "GitLab",
-            description: "Plateforme DevOps complète",
-            icon: "</>",
-        },
-        {
-            title: "LinkedIn",
-            description: "Réseau professionnel",
-            icon: "in",
-        },
-        {
-            title: "X (Twitter)",
-            description: "Actualités et veille tech",
-            icon: "✕",
-        },
-        {
-            title: "Instagram",
-            description: "Portfolio visuel",
-            icon: "◎",
-        },
-        {
-            title: "Portfolio Web",
-            description: "Site personnel et projets",
-            icon: "🌐",
-        },
-    ];
-
-    return <HomeView profile={profile} tools={tools}/>;
+    return <HomeView profile={profile} />;
 }
