@@ -8,7 +8,7 @@ export default function FooterView({links, socials}) {
                 {/* Left */}
                 <div className="footer__brand">
                     <span className="footer__logo">▶</span>
-                    <span>Mouammar Soulé</span>
+                    <span>MOUAMMAR Soulé</span>
                 </div>
 
                 {/* Center */}

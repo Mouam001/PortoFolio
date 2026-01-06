@@ -5,7 +5,7 @@ export default function Footer() {
         {label: "Contact", to: "/contact"},
         {label: "Skills", to: "/skills"},
         {label: "Formations", to: "/formations"},
-        {label: "Vie", to: "/vie"},
+        {label:"Vie", to:"/vie"},
     ];
 
     const socials = [
