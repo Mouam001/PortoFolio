@@ -1,5 +1,5 @@
 import AboutView from "./view";
-import gameUser from "../../assets/game.jpeg";
+import gameUser from "../../assets/games.png";
 import hospital from "../../assets/hospital.jpg";
 import inventaire from "../../assets/IDEA.png";
 import finance from "../../assets/finance.png";
