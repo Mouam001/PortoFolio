@@ -9,8 +9,7 @@ export default function Home() {
         availability: "Disponible pour nouvelles opportunités",
         description: `
 Je développe des applications web et des outils métier pensés pour durer.
-En alternance chez IDEA, j’interviens sur des solutions concrètes mêlant
-développement applicatif, automatisation et qualité logicielle via la Power Platform.
+En alternance, j'allie développement sur Power Platform et gestion de parc informatique. Je conçois et maintiens des applications web et des outils métier robustes, tout en assurant un support technique de proximité. Mon objectif : créer des solutions digitales pérennes qui répondent précisément aux besoins opérationnels.
         `,
         location: "Calais, France — ULCO",
         experience: "plus de 2 ans d’expérience",

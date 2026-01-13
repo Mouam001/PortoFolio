@@ -1,6 +1,9 @@
 import "./about.css";
 
 export default function AboutView({about, projects}) {
+    const handlePrivateRepoclick = () => {
+        alert("Désolé, ce dépôt est privé !");
+    }
     return (
         <section id="about-me" className="about">
             {/* TEXTE */}
@@ -30,6 +33,7 @@ export default function AboutView({about, projects}) {
                                     ))}
                                 </div>
 
+                                {project.link ? (
                                 <a
                                     href={project.link}
                                     target="_blank"
@@ -38,6 +42,14 @@ export default function AboutView({about, projects}) {
                                 >
                                     Voir le dépôt Git ↗
                                 </a>
+                                        ) : (
+                                    <button
+                                        onClick={handlePrivateRepoclick}
+                                        className="project-link project-link--disabled"
+                                    >
+                                    Voir le dépôt Git ↗
+                                    </button>
+                                )}
                             </div>
                         </div>
                     ))}

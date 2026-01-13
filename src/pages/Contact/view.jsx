@@ -37,8 +37,8 @@ export default function ContactView() {
                 <div className="contact__info">
                     <h3>Informations de Contact</h3>
 
-                    <p><strong>Email :</strong> mouammar@gmail.com</p>
-                    <p><strong>Téléphone :</strong> +33 6 12 34 56 78</p>
+                    <p><strong>Email :</strong> contactme@mouammarsoule.fr</p>
+                    <p><strong>Téléphone :</strong> +33 7 73 77 91 64</p>
                     <p><strong>Localisation :</strong> France</p>
 
                     <div className="contact__availability">

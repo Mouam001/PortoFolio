@@ -55,7 +55,6 @@ export default function About() {
                 "Application de suivi opérationnel : gestion des cuves, suivi des pourcentages de lignes, identification des éléments à évacuer, planification des opérations de nettoyage.",
             image: inventaire,
             tags: ["PowerApps", "PowerAutomate", "SharePoint (BDD)", "Json"],
-            href: "https://www.groupe-idea.com/fr",
             link:null,
         },
         
