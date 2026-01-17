@@ -5,7 +5,7 @@ import sportImg from "../../assets/sport.webp";
 import musicImg from "../../assets/moummar.png";
 import travelImg from "../../assets/voyage.jpg";
 import learningImg from "../../assets/veille.jpg";
-import ecoImg from "../../assets/environnement.jpg";
+import ecoImg from "../../assets/environnement.JPG";
 
 export default function Vie() {
     const activities = [

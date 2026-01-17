@@ -166,3 +166,17 @@
 .mobile-link:hover {
     color: #2563eb;
 }
+
+
+.nav-link {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    color: #334155;
+}
+
+.nav-link:hover {
+    color: #2563eb;
+}

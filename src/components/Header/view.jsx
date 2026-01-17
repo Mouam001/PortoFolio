@@ -1,59 +1,4 @@
-// import {Link} from "react-router-dom";
-// import "./header.css";
-
-// export default function HeaderView({
-//                                        navItems,
-//                                        isOpen,
-//                                        toggleMenu,
-//                                        closeMenu,
-//                                    }) {
-//     return (
-//         <header className="header">
-//             <div className="header__container">
-//                 <div className="header__logo">
-//                     <Link to="/">Mouammar Soulé</Link>
-//                 </div>
-
-//                 {/* Desktop */}
-//                 <nav className="header__nav">
-//                     {navItems.map(item => (
-//                         <Link key={item.label} to={item.to}>
-//                             {item.label}
-//                         </Link>
-//                     ))}
-//                     <Link to="/contact" className="header__cta">
-//                         Contact
-//                     </Link>
-//                 </nav>
-
-//                 {/* Burger */}
-//                 <button
-//                     className={`burger ${isOpen ? "is-open" : ""}`}
-//                     onClick={toggleMenu}
-//                 >
-//                     <span/>
-//                     <span/>
-//                     <span/>
-//                 </button>
-//             </div>
-
-//             {/* Mobile */}
-//             <div className={`mobile-menu ${isOpen ? "open" : ""}`}>
-//                 {navItems.map(item => (
-//                     <Link
-//                         key={item.label}
-//                         to={item.to}
-//                         onClick={closeMenu}
-//                     >
-//                         {item.label}
-//                     </Link>
-//                 ))}
-//             </div>
-//         </header>
-//     );
-// }
-
-import { Link, useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "./header.css";
 
 export default function HeaderView({
@@ -63,17 +8,18 @@ export default function HeaderView({
   closeMenu,
 }) {
   const location = useLocation();
+  const navigate = useNavigate();
   const isHome = location.pathname === "/";
 
-  const handleNavClick = (to) => {
+  const handleNavClick = (hash) => {
     closeMenu();
 
-    if (to.startsWith("#")) {
-      if (isHome) {
-        document.querySelector(to)?.scrollIntoView({ behavior: "smooth" });
-      } else {
-        window.location.href = `/${to}`;
-      }
+    if (isHome) {
+      document
+        .getElementById(hash)
+        ?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      navigate(`/#${hash}`);
     }
   };
 
@@ -81,29 +27,28 @@ export default function HeaderView({
     <header className="header">
       <div className="header__container">
         <div className="header__logo">
-          <Link to="/">Mouammar Soulé</Link>
+          <button
+            className="nav-link"
+            onClick={() => handleNavClick("home")}
+          >
+            Mouammar Soulé
+          </button>
         </div>
 
         {/* Desktop */}
         <nav className="header__nav">
-          {navItems.map((item) =>
-            item.to.startsWith("#") ? (
-              <button
-                key={item.label}
-                onClick={() => handleNavClick(item.to)}
-                className="nav-link"
-              >
-                {item.label}
-              </button>
-            ) : (
-              <Link key={item.label} to={item.to}>
-                {item.label}
-              </Link>
-            )
-          )}
+          {navItems.map((item) => (
+            <button
+              key={item.label}
+              className="nav-link"
+              onClick={() => handleNavClick(item.hash)}
+            >
+              {item.label}
+            </button>
+          ))}
 
           <button
-            onClick={() => handleNavClick("#contact")}
+            onClick={() => handleNavClick("contact")}
             className="header__cta"
           >
             Contact
@@ -126,8 +71,8 @@ export default function HeaderView({
         {navItems.map((item) => (
           <button
             key={item.label}
-            onClick={() => handleNavClick(item.to)}
             className="mobile-link"
+            onClick={() => handleNavClick(item.hash)}
           >
             {item.label}
           </button>
