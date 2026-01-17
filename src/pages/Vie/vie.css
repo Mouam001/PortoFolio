@@ -80,3 +80,13 @@
         grid-template-columns: 1fr;
     }
 }
+
+.vie-card--clickable {
+    cursor: pointer;
+}
+
+.vie-card--clickable:hover {
+    transform: translateY(-4px);
+    transition: transform 0.2s ease;
+}
+

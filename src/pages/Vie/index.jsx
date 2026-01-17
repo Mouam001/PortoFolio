@@ -13,8 +13,10 @@ export default function Vie() {
             id: "association",
             title: "Vie associative",
             description:
-                "Engagement bénévole auprès des jeunes, axé sur l’accompagnement, l’éducation et la transmission des connaissances.",
+                "Président d’EtudiaGo, association à but non lucratif engagée dans l’accompagnement des étudiants à chaque étape de leur parcours (orientation, installation, intégration).\n" +
+                "Je pilote les actions de l’association afin de faciliter l’accès aux études en Europe et en France et de contribuer activement à la réussite académique et personnelle des étudiants.",
             image: associativeImg,
+            link : "https://www.facebook.com/profile.php?id=61585235887008",
         },
         {
             id: "sport",

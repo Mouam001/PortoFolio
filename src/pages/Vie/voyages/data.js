@@ -54,14 +54,14 @@ export const voyages = [
     country: "Comores",
     images: [comores1, comores2, comores3, comores4, comores5],
     description:
-      "Découverte de paysages paradisiaques et d'une culture unique. Les Comores offrent une immersion naturelle et authentique.",
+      "Retour aux Comores, mon pays, après un séjour en France pour mes études. Une visite entre famille, amis et souvenirs, au cœur de paysages paradisiaques et d’une culture qui m’est chère.",
     link: "https://fr.wikipedia.org/wiki/Comores",
   },
   {
     country: "Arabie Saoudite",
     images: [arabie1, arabie2, arabie3, arabie4, arabie5],
     description:
-      "Voyage à travers des paysages désertiques et des villes modernes. Une immersion dans la culture arabe et les traditions du Moyen-Orient.",
+      "Voyage en Arabie Saoudite, entre spiritualité et découvertes. Une immersion dans les paysages désertiques, les villes modernes et les traditions riches du Moyen-Orient.",
     link: "https://fr.wikipedia.org/wiki/Arabie",
   },
   {

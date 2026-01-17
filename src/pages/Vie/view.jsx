@@ -27,12 +27,12 @@ export default function VieView({ activities }) {
                         </>
                     );
 
-                    // 👉 CAS VOYAGES → navigation
-                    if (item.id === "travel") {
+                    // 🔁 Lien interne (Voyages)
+                    if (item.route) {
                         return (
                             <Link
                                 key={item.id}
-                                to="/vie/voyages"
+                                to={item.route}
                                 className="vie-card vie-card--clickable"
                             >
                                 {CardContent}
@@ -40,7 +40,22 @@ export default function VieView({ activities }) {
                         );
                     }
 
-                    // 👉 AUTRES CARTES → statiques
+                    // 🔗 Lien externe (Association)
+                    if (item.link) {
+                        return (
+                            <a
+                                key={item.id}
+                                href={item.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="vie-card vie-card--clickable"
+                            >
+                                {CardContent}
+                            </a>
+                        );
+                    }
+
+                    // 🧱 Carte statique
                     return (
                         <article key={item.id} className="vie-card">
                             {CardContent}
