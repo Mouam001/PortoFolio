@@ -13,10 +13,9 @@ export default function Home() {
         name: "Mouammar Soulé",
         role: "Développeur & Technicien Informatique",
         availability: "Disponible pour nouvelles opportunités",
-        description: `
-Développeur logiciel spécialisé dans la conception d’applications métiers et de solutions web pérennes,
-avec une double expertise en développement et support IT.
-`,
+        description: `Développeur logiciel orienté applications métiers et solutions web durables, avec une double compétence en développement et support IT.
+En alternance, je conçois, développe et maintiens des applications web et des outils métier (React, .NET, Power Platform), tout en assurant la gestion du parc informatique et le support utilisateurs.
+Attaché à la qualité, à la fiabilité et à la pérennité des solutions, mon objectif est de créer des outils digitaux adaptés aux besoins opérationnels et à forte valeur ajoutée.`,
         location: "Calais, France — ULCO",
         experience: "plus de 2 ans d’expérience",
         image: profileImg,
