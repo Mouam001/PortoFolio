@@ -6,11 +6,11 @@ export default function Header() {
 
     const navItems = [
         {label: "Home", to: "/"},
-        {label: "About Me", to: "/about"},
-        {label: "Formations", to: "/formations"},
-        {label: "Skills", to: "/skills"},
-        {label: "Vie", to: "/vie"},
-        {label: "Contact", to: "/contact"},
+        {label: "About Me", to: "#about"},
+        {label: "Formations", to: "#formations"},
+        {label: "Skills", to: "#skills"},
+        {label: "Vie", to: "#vie"},
+        {label: "Contact", to: "#contact"},
 
     ];
 
