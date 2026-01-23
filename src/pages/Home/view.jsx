@@ -51,7 +51,6 @@ export default function HomeView({ profile }) {
 
                         <div className="home__experience">
                             <strong>{profile.experience}</strong>
-                            <span>d’expérience</span>
                         </div>
                     </div>
                 </div>
