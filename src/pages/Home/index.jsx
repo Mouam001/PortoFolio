@@ -1,5 +1,5 @@
 import HomeView from "./view";
-import profileImg from "../../assets/profile.png";
+import profileImg from "../../assets/profile.jpg";
 import cvFile from "../../assets/CV_Mouammar.pdf";
 
 import About from "../About";
@@ -33,6 +33,10 @@ Attaché à la qualité, à la fiabilité et à la pérennité des solutions, mo
             <section id="about">
                 <About />
             </section>
+
+            <section id="services">
+                <Services />
+            </section>
             
             <section id="formations">
                 <Formations />
@@ -40,10 +44,6 @@ Attaché à la qualité, à la fiabilité et à la pérennité des solutions, mo
             
             <section id="skills">
                 <Skills />
-            </section>
-
-            <section id="services">
-                <Services />
             </section>
             
             <section id="vie">

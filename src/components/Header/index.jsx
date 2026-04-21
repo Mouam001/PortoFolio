@@ -5,9 +5,9 @@ import HeaderView from "./view";
 const NAV_ITEMS = [
     { label: "Accueil", hash: "home" },
     { label: "À propos", hash: "about" },
+    { label: "Services", hash: "services" },
     { label: "Formations", hash: "formations" },
     { label: "Compétences", hash: "skills" },
-    { label: "Services", hash: "services" },
     { label: "Vie", hash: "vie" },
 ];
 

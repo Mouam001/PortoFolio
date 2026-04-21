@@ -49,13 +49,30 @@ export default function ServicesView({ services }) {
             </div>
 
             <div className="services__cta">
-                <p>
-                    Vous avez une idée, un outil à améliorer ou un besoin à clarifier ?
-                </p>
-                <a href="#contact">
-                    Discuter du besoin
-                    <ArrowUpRight size={18} />
-                </a>
+                <div>
+                    <p>
+                        Vous avez une idée, un outil à améliorer ou un besoin à clarifier ?
+                    </p>
+                    <span>
+                        Retrouvez aussi mon univers entrepreneurial avec Novakom.
+                    </span>
+                </div>
+
+                <div className="services__cta-actions">
+                    <a href="#contact">
+                        Discuter du besoin
+                        <ArrowUpRight size={18} />
+                    </a>
+                    <a
+                        href="https://www.novakom.tech/"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="services__cta-link--ghost"
+                    >
+                        Découvrir Novakom
+                        <ArrowUpRight size={18} />
+                    </a>
+                </div>
             </div>
         </section>
     );
