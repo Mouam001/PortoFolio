@@ -4,6 +4,7 @@ export default function FormationsView({formations}) {
     return (
         <section id="formations" className="formations">
             <div className="formations__header">
+                <span className="section-kicker">Parcours</span>
                 <h2>Formations</h2>
                 <p>
                     Mon parcours académique m’a permis d’acquérir des bases solides en

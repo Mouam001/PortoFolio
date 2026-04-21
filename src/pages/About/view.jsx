@@ -16,7 +16,10 @@ export default function AboutView({about, projects}) {
 
             {/* PROJETS */}
             <div className="about__projects">
-                <h3>Mes Projets</h3>
+                <div className="about__projects-header">
+                    <span className="section-kicker">Réalisations</span>
+                    <h3>Projets sélectionnés</h3>
+                </div>
 
                 <div className="projects__grid">
                     {projects.map((project) => (

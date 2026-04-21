@@ -28,6 +28,12 @@ export default function HomeView({ profile }) {
 
                     <div className="home__actions">
                         <a
+                            href="#contact"
+                            className="btn btn--primary"
+                        >
+                            Me contacter
+                        </a>
+                        <a
                             href={profile.cv}
                             download
                             className="btn btn--ghost"

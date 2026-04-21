@@ -3,14 +3,12 @@ import gameUser from "../../assets/games.png";
 import hospital from "../../assets/hospital.jpg";
 import inventaire from "../../assets/IDEA.png";
 import finance from "../../assets/finance.png";
-import project from "../../assets/moummar.png";
 export default function About() {
     const about = {
-        title: "À Propos de Moi",
+        title: "À propos de moi",
         paragraphs: [
-            "Passionné par la téchnologie et le monde du développement . " +
-            "Étudiant en Master 2 I2L (Ingénierie du Logiciel Libre), je suis en alternance chez IDEA en tant que technicien informatique et développeur d’applications."+
-            " J’interviens notamment sur le développement de solutions via la Power Platform."
+            "Passionné par la technologie et le développement logiciel, je suis étudiant en Master 2 I2L (Ingénierie du Logiciel Libre) et en alternance chez IDEA comme technicien informatique et développeur d’applications.",
+            "J’interviens sur des applications web, des outils métiers et des solutions Power Platform, avec une attention particulière portée à la fiabilité, à l’usage réel et à la maintenance dans le temps."
         ],
 
     };
@@ -33,7 +31,7 @@ export default function About() {
             link: "https://github.com/Mouam001/gestion-finance",
         },
         {
-            title: "Projet Agile – Gestion Hopital (24h)",
+            title: "Projet Agile – Gestion Hôpital (24h)",
             description:
                 "Développement en 24h d’une application web pour saisir et consulter des indicateurs de santé (poids, IMC, sommeil, fréquence cardiaque…), gérer plusieurs unités et assurer la sécurité des données, dans un contexte agile.",
             image: hospital,

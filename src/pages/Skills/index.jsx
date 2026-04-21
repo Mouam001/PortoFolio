@@ -38,10 +38,8 @@ export default function Skills() {
             title: "DevOps & Cloud",
             icon: "☁️",
             items: [
-                "Docker",
                 "GitHub Actions (CI/CD)",
                 "GitLab Runner",
-                "Vercel",
             ],
         },
         {
@@ -65,7 +63,7 @@ export default function Skills() {
 
     const links = [
         { label: "GitHub", url: "https://github.com/Mouam001", icon: "🐙" },
-        { label: "LinkedIn", url: "https://linkedin.com", icon: "💼" },
+        { label: "LinkedIn", url: "https://www.linkedin.com/in/mouammar-soule-134b5423a/", icon: "💼" },
         { label: "VS Code", url: "https://code.visualstudio.com", icon: "🧩" },
         { label: "JetBrains", url: "https://www.jetbrains.com", icon: "🚀" },
         { label: "Portfolio Web", url: "/", icon: "🌐" },

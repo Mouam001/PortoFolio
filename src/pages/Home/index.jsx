@@ -5,6 +5,7 @@ import cvFile from "../../assets/CV_Mouammar.pdf";
 import About from "../About";
 import Formations from "../Formations";
 import Skills from "../Skills";
+import Services from "../Services";
 import Vie from "../Vie";
 import Contact from "../Contact";
 
@@ -12,7 +13,7 @@ export default function Home() {
     const profile = {
         name: "Mouammar Soulé",
         role: "Développeur & Technicien Informatique",
-        availability: "Disponible pour nouvelles opportunités",
+        availability: "Ouvert aux opportunités, missions et collaborations",
         description: `Développeur logiciel orienté applications métiers et solutions web durables, avec une double compétence en développement et support IT.
 En alternance, je conçois, développe et maintiens des applications web et des outils métier, tout en assurant la gestion du parc informatique et le support utilisateurs.
 Attaché à la qualité, à la fiabilité et à la pérennité des solutions, mon objectif est de créer des outils digitaux adaptés aux besoins opérationnels et à forte valeur ajoutée.`,
@@ -39,6 +40,10 @@ Attaché à la qualité, à la fiabilité et à la pérennité des solutions, mo
             
             <section id="skills">
                 <Skills />
+            </section>
+
+            <section id="services">
+                <Services />
             </section>
             
             <section id="vie">

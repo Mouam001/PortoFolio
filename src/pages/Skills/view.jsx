@@ -4,7 +4,8 @@ export default function SkillsView({ categories, links }) {
     return (
         <section id="skills" className="skills">
             <header className="skills__header">
-                <h2>Compétences Techniques</h2>
+                <span className="section-kicker">Compétences</span>
+                <h2>Compétences techniques</h2>
                 <p>
                     Un aperçu des technologies et méthodologies que j’utilise
                     pour concevoir des applications performantes et maintenables.

@@ -5,7 +5,8 @@ export default function VieView({ activities }) {
     return (
         <section className="vie">
             <header className="vie__header">
-                <h2>Ma Vie</h2>
+                <span className="section-kicker">Au-delà du code</span>
+                <h2>Vie personnelle & engagements</h2>
                 <p>
                     Au-delà du code, je m’investis dans des activités qui nourrissent
                     mon équilibre personnel, ma curiosité et mon engagement.

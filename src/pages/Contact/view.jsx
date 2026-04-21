@@ -35,17 +35,25 @@ export default function ContactView() {
             <div className="contact__container">
                 {/* LEFT */}
                 <div className="contact__info">
-                    <h3>Informations de Contact</h3>
+                    <span className="section-kicker">Contact</span>
+                    <h3>Vous avez un projet, une mission ou une opportunité ?</h3>
+                    <p className="contact__lead">
+                        Discutons de votre besoin. Je suis ouvert aux opportunités,
+                        collaborations et missions autour du développement web,
+                        des outils métiers et du support IT.
+                    </p>
 
-                    <p><strong>Email :</strong> contactme@mouammarsoule.fr</p>
-                    <p><strong>Téléphone :</strong> +33 7 73 77 91 64</p>
-                    <p><strong>Localisation :</strong> France</p>
+                    <div className="contact__details">
+                        <p><strong>Email :</strong> contactme@mouammarsoule.fr</p>
+                        <p><strong>Téléphone :</strong> +33 7 73 77 91 64</p>
+                        <p><strong>Localisation :</strong> France</p>
+                    </div>
 
                     <div className="contact__availability">
                         <h4>Disponibilité</h4>
                         <p>
-                            Je suis actuellement disponible pour de nouvelles
-                            opportunités et collaborations.
+                            Actuellement disponible pour échanger sur des besoins
+                            concrets, une alternance, une mission freelance ou une collaboration.
                         </p>
                     </div>
                 </div>
@@ -82,7 +90,7 @@ export default function ContactView() {
 
                     <textarea
                         name="message"
-                        placeholder="Décrivez votre projet ou votre demande..."
+                        placeholder="Décrivez votre projet, votre besoin ou votre opportunité..."
                         required
                     />
 

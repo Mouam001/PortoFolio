@@ -3,6 +3,8 @@ import "./header.css";
 
 export default function HeaderView({
   navItems,
+  activeHash,
+  onNavClick,
   isOpen,
   toggleMenu,
   closeMenu,
@@ -23,13 +25,15 @@ export default function HeaderView({
     }
   };
 
+  const navigateTo = onNavClick || handleNavClick;
+
   return (
     <header className="header">
       <div className="header__container">
         <div className="header__logo">
           <button
-            className="nav-link"
-            onClick={() => handleNavClick("home")}
+            className="header__brand"
+            onClick={() => navigateTo("home")}
           >
             Mouammar Soulé
           </button>
@@ -40,16 +44,16 @@ export default function HeaderView({
           {navItems.map((item) => (
             <button
               key={item.label}
-              className="nav-link"
-              onClick={() => handleNavClick(item.hash)}
+              className={`nav-link ${activeHash === item.hash ? "is-active" : ""}`}
+              onClick={() => navigateTo(item.hash)}
             >
               {item.label}
             </button>
           ))}
 
           <button
-            onClick={() => handleNavClick("contact")}
-            className="header__cta"
+            onClick={() => navigateTo("contact")}
+            className={`header__cta ${activeHash === "contact" ? "is-active" : ""}`}
           >
             Contact
           </button>
@@ -59,6 +63,8 @@ export default function HeaderView({
         <button
           className={`burger ${isOpen ? "is-open" : ""}`}
           onClick={toggleMenu}
+          aria-label="Ouvrir le menu"
+          aria-expanded={isOpen}
         >
           <span />
           <span />
@@ -71,12 +77,18 @@ export default function HeaderView({
         {navItems.map((item) => (
           <button
             key={item.label}
-            className="mobile-link"
-            onClick={() => handleNavClick(item.hash)}
+            className={`mobile-link ${activeHash === item.hash ? "is-active" : ""}`}
+            onClick={() => navigateTo(item.hash)}
           >
             {item.label}
           </button>
         ))}
+        <button
+          className={`mobile-link mobile-link--cta ${activeHash === "contact" ? "is-active" : ""}`}
+          onClick={() => navigateTo("contact")}
+        >
+          Contact
+        </button>
       </div>
     </header>
   );
