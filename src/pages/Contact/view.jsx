@@ -6,6 +6,9 @@ export default function ContactView() {
     const formRef = useRef();
     const [loading, setLoading] = useState(false);
     const [success, setSuccess] = useState(null);
+    const whatsappMessage = encodeURIComponent(
+        "Bonjour Mouammar, je vous contacte pour une opportunité avec une approche inclusive."
+    );
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -38,9 +41,10 @@ export default function ContactView() {
                     <span className="section-kicker">Contact</span>
                     <h3>Vous avez un projet, une mission ou une opportunité ?</h3>
                     <p className="contact__lead">
-                        Discutons de votre besoin. Je suis ouvert aux opportunités,
+                        Discutons de vos besoins. 
+                        Je suis ouvert aux opportunités,
                         collaborations et missions autour du développement web,
-                        des outils métiers et du support IT.
+                        des applications métiers et des solutions IT.
                     </p>
 
                     <div className="contact__details">
@@ -48,6 +52,14 @@ export default function ContactView() {
                         <p><strong>Téléphone :</strong> +33 7 73 77 91 64</p>
                         <p><strong>Localisation :</strong> France</p>
                     </div>
+                    <a
+                        className="contact__whatsapp-btn"
+                        href={`https://wa.me/33773779164?text=${whatsappMessage}`}
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Contacter moi sur WhatsApp
+                    </a>
 
                     <div className="contact__availability">
                         <h4>Disponibilité</h4>
