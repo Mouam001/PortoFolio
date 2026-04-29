@@ -2,7 +2,7 @@ import "./about.css";
 
 export default function AboutView({about, projects}) {
     const handlePrivateRepoclick = () => {
-        alert("Désolé, ce dépôt est privé !");
+        alert("Désolé, ce lien est privé !");
     }
     return (
         <section id="about-me" className="about">
@@ -24,6 +24,12 @@ export default function AboutView({about, projects}) {
                 <div className="projects__grid">
                     {projects.map((project) => (
                         <div key={project.title} className="project-card">
+                            {/** GitHub links keep Git label, other links use site label */}
+                            {(() => {
+                                const isGithubLink = !!project.link && project.link.includes("github.com");
+                                const linkLabel = isGithubLink ? "Voir le dépôt Git ↗" : "Voir le site ↗";
+                                return (
+                                    <>
                             <img src={project.image} alt={project.title}/>
 
                             <div className="project-card__content">
@@ -43,17 +49,20 @@ export default function AboutView({about, projects}) {
                                     rel="noreferrer"
                                     className="project-link"
                                 >
-                                    Voir le dépôt Git ↗
+                                    {linkLabel}
                                 </a>
                                         ) : (
                                     <button
                                         onClick={handlePrivateRepoclick}
                                         className="project-link project-link--disabled"
                                     >
-                                    Voir le dépôt Git ↗
+                                    {linkLabel}
                                     </button>
                                 )}
                             </div>
+                                    </>
+                                );
+                            })()}
                         </div>
                     ))}
                 </div>

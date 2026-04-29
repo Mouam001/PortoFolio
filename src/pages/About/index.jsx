@@ -3,6 +3,11 @@ import gameUser from "../../assets/games.png";
 import hospital from "../../assets/hospital.jpg";
 import inventaire from "../../assets/IDEA.png";
 import finance from "../../assets/finance.png";
+import novakom from "../../assets/novakom.jpeg";
+import vroomdata from "../../assets/vroomData.png";
+import android from "../../assets/android.jpeg";
+import vard from "../../assets/vard.png";
+
 export default function About() {
     const about = {
         title: "À propos de moi",
@@ -44,7 +49,7 @@ export default function About() {
                 "Application interne pour assurer le suivi du parc matériel : inventaire, gestion des équipements, consultation de certains identifiants, remontée d’incidents et maintien de la base matériel.",
             image: inventaire,
             tags: ["PowerApps", "PowerAutomate", "SharePoint (BDD)", "Json"],
-            link: null,
+            link: "https://www.groupe-idea.com/fr",
         },
 
         {
@@ -53,9 +58,32 @@ export default function About() {
                 "Application de suivi opérationnel : gestion des cuves, suivi des pourcentages de lignes, identification des éléments à évacuer, planification des opérations de nettoyage.",
             image: inventaire,
             tags: ["PowerApps", "PowerAutomate", "SharePoint (BDD)", "Json"],
-            link:null,
+            link:"https://www.groupe-idea.com/fr",
         },
-        
+        {
+            title: "VARD – IA de Pré-Diagnostic Immobilier",
+            description:
+                "Conception et développement de VARD, une solution basée sur l’intelligence artificielle dédiée au pré-diagnostic immobilier. L’application analyse les caractéristiques d’un bien afin de fournir des recommandations pour la rénovation, estimer son potentiel de valorisation et faciliter la prise de décision lors de la vente. Le projet vise à automatiser l’évaluation initiale grâce à des modèles intelligents, tout en offrant une interface permettant de visualiser les insights et optimisations possibles.",
+            image: vard,
+            tags: ["IA", "Machine Learning", "Data Analysis", "Immobilier", "Automation", "Python"],
+            link: "https://github.com/Mouam001/InnovTech",
+        },
+        {
+            title: "NovaKom – Infrastructure IT & Cybersécurité",
+            description:
+                "Co-fondateur et développeur au sein de NovaKom, une startup innovante basée aux Comores. Conception et mise en place de solutions complètes en infrastructure IT, cybersécurité, administration réseau et développement logiciel. Participation active à la structuration des systèmes informatiques pour les entreprises et PME, avec une approche orientée performance, sécurité et scalabilité.",
+            image: novakom,
+            tags: ["React", "TS", "Supabase", "Resend"],
+            link: "https://www.novakom.tech/",
+        },
+        {
+            title: "VroomData – Architecture Multi-Tier avec JEE",
+            description:
+                "Application d’analyse des immatriculations permettant de connaître le nombre de matricules par année, région, département et ville, de filtrer les véhicules par année, de proposer de futures immatriculations et d’ajouter des favoris.",
+            image: vroomdata,
+            tags: ["Java", "Spring", "JEE", "PostgreSQL", "ClickHouse", "Grafana", "OpenTelemetry", "Docker"],
+            link: "https://github.com/Mouam001/vroomdata",
+        },
     ];
     
 
