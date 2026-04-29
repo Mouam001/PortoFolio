@@ -66,7 +66,7 @@ export default function About() {
                 "Conception et développement de VARD, une solution basée sur l’intelligence artificielle dédiée au pré-diagnostic immobilier. L’application analyse les caractéristiques d’un bien afin de fournir des recommandations pour la rénovation, estimer son potentiel de valorisation et faciliter la prise de décision lors de la vente. Le projet vise à automatiser l’évaluation initiale grâce à des modèles intelligents, tout en offrant une interface permettant de visualiser les insights et optimisations possibles.",
             image: vard,
             tags: ["IA", "Machine Learning", "Data Analysis", "Immobilier", "Automation", "Python"],
-            link: "https://github.com/Mouam001/InnovTech",
+            link: "https://github.com/Mouam001/vard",
         },
         {
             title: "NovaKom – Infrastructure IT & Cybersécurité",
