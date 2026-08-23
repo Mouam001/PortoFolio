@@ -5,7 +5,6 @@ import inventaire from "../../assets/IDEA.png";
 import finance from "../../assets/finance.png";
 import novakom from "../../assets/novakom.jpeg";
 import vroomdata from "../../assets/vroomData.png";
-import android from "../../assets/android.jpeg";
 import vard from "../../assets/vard.png";
 
 export default function About() {

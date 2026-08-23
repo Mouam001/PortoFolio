@@ -1,12 +1,12 @@
 .formations {
-    padding: 118px 28px;
+    padding: 72px 28px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .formations__header {
     max-width: 600px;
-    margin-bottom: 80px;
+    margin-bottom: 52px;
 }
 
 .formations__header h2 {
@@ -41,7 +41,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 66px;
     position: relative;
 }
 
@@ -118,7 +118,7 @@
 /* RESPONSIVE */
 @media (max-width: 900px) {
     .formations {
-        padding: 90px 20px;
+        padding: 56px 20px;
     }
 
     .formations__header {

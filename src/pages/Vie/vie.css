@@ -1,12 +1,12 @@
 .vie {
-    padding: 118px 28px;
+    padding: 72px 28px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .vie__header {
     max-width: 700px;
-    margin-bottom: 56px;
+    margin-bottom: 40px;
 }
 
 .vie__header h2 {
@@ -81,7 +81,7 @@
 /* RESPONSIVE */
 @media (max-width: 900px) {
     .vie {
-        padding: 90px 20px;
+        padding: 56px 20px;
     }
 
     .vie__grid {

@@ -1,12 +1,12 @@
 .skills {
-    padding: 118px 28px;
+    padding: 72px 28px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .skills__header {
     max-width: 640px;
-    margin-bottom: 64px;
+    margin-bottom: 44px;
 }
 
 .skills__header h2 {
@@ -26,7 +26,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
-    margin-bottom: 96px;
+    margin-bottom: 58px;
 }
 
 /* CARD */
@@ -94,7 +94,7 @@
     color: #0f172a;
     font-size: 22px;
     font-weight: 850;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 }
 
 .skills__links-grid {
@@ -126,7 +126,7 @@
 /* RESPONSIVE */
 @media (max-width: 900px) {
     .skills {
-        padding: 90px 20px;
+        padding: 56px 20px;
     }
 
     .skills__grid {

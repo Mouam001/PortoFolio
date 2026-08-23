@@ -1,12 +1,12 @@
 .services {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 118px 28px;
+    padding: 72px 28px;
 }
 
 .services__header {
     max-width: 720px;
-    margin-bottom: 54px;
+    margin-bottom: 38px;
 }
 
 .section-kicker {
@@ -44,11 +44,11 @@
 
 .service-card {
     position: relative;
-    min-height: 300px;
+    min-height: 260px;
     display: flex;
     flex-direction: column;
-    gap: 22px;
-    padding: 28px;
+    gap: 18px;
+    padding: 26px;
     border: 1px solid rgba(148, 163, 184, 0.18);
     border-radius: 22px;
     background:
@@ -117,7 +117,7 @@
 }
 
 .services__cta {
-    margin-top: 34px;
+    margin-top: 28px;
     padding: 24px 28px;
     display: flex;
     align-items: center;
@@ -193,7 +193,7 @@
 
 @media (max-width: 700px) {
     .services {
-        padding: 90px 20px;
+        padding: 56px 20px;
     }
 
     .services__grid {
