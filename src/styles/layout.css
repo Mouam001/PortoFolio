@@ -1,6 +1,15 @@
-.app-content {
+.app-main {
     padding-top: 88px;
+}
+
+.app-content {
     max-width: 1200px;
     margin: 0 auto;
     padding-inline: 24px;
+}
+
+@media (max-width: 860px) {
+    .app-main {
+        padding-top: 76px;
+    }
 }

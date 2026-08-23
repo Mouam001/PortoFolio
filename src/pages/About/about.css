@@ -1,5 +1,5 @@
 .about {
-    padding: 72px 28px;
+    padding: 48px 28px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -31,11 +31,11 @@
 }
 
 .about__projects {
-    margin-top: 46px;
+    margin-top: 38px;
 }
 
 .about__projects-header {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 }
 
 .about__projects h3 {
@@ -48,8 +48,9 @@
 .projects__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: dense;
     align-items: start;
-    gap: 24px;
+    gap: 20px;
 }
 
 .project-card {
@@ -149,7 +150,7 @@
 
 @media (max-width: 700px) {
     .about {
-        padding: 56px 20px;
+        padding: 38px 20px;
     }
 
     .about__intro {

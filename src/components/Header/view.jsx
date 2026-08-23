@@ -45,7 +45,7 @@ export default function HeaderView({
             <button
               key={item.label}
               className={`nav-link ${activeHash === item.hash ? "is-active" : ""}`}
-              onClick={() => navigateTo(item.hash)}
+              onClick={() => navigateTo(item.path || item.hash)}
             >
               {item.label}
             </button>
@@ -78,7 +78,7 @@ export default function HeaderView({
           <button
             key={item.label}
             className={`mobile-link ${activeHash === item.hash ? "is-active" : ""}`}
-            onClick={() => navigateTo(item.hash)}
+            onClick={() => navigateTo(item.path || item.hash)}
           >
             {item.label}
           </button>

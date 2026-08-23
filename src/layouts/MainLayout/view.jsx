@@ -7,7 +7,7 @@ export default function MainLayoutView({children}) {
     return (
         <>
             <Header/>
-            <main className="pt-[88px]">{children}</main>
+            <main className="app-main">{children}</main>
             <Footer/>
         </>
     );

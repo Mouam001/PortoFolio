@@ -2,68 +2,30 @@ import { Link } from "react-router-dom";
 import "./vie.css";
 
 export default function VieView({ activities }) {
+    const keywords = activities.map((item) => item.title);
+
     return (
         <section className="vie">
-            <header className="vie__header">
-                <span className="section-kicker">Au-delà du code</span>
-                <h2>Vie personnelle & engagements</h2>
-                <p>
-                    Au-delà du code, je m’investis dans des activités qui nourrissent
-                    mon équilibre personnel, ma curiosité et mon engagement.
-                </p>
-            </header>
+            <Link to="/vie-personnelle" className="vie-preview">
+                <div className="vie-preview__content">
+                    <span className="section-kicker">Au-delà du code</span>
+                    <h2>Vie personnelle & engagements</h2>
+                    <p>
+                        Au-delà du développement logiciel, je m’investis dans la vie associative,
+                        le sport, la musique, l’apprentissage, les voyages et les actions
+                        environnementales. Découvrez les activités et les engagements qui
+                        participent à mon parcours personnel.
+                    </p>
 
-            <div className="vie__grid">
-                {activities.map((item) => {
-                    const CardContent = (
-                        <>
-                            <div className="vie-card__image">
-                                <img src={item.image} alt={item.title} />
-                            </div>
+                    <div className="vie-preview__tags" aria-label="Activités principales">
+                        {keywords.map((keyword) => (
+                            <span key={keyword}>{keyword}</span>
+                        ))}
+                    </div>
+                </div>
 
-                            <div className="vie-card__content">
-                                <h3>{item.title}</h3>
-                                <p>{item.description}</p>
-                            </div>
-                        </>
-                    );
-
-                    // 🔁 Lien interne (Voyages)
-                    if (item.route) {
-                        return (
-                            <Link
-                                key={item.id}
-                                to={item.route}
-                                className="vie-card vie-card--clickable"
-                            >
-                                {CardContent}
-                            </Link>
-                        );
-                    }
-
-                    // 🔗 Lien externe (Association)
-                    if (item.link) {
-                        return (
-                            <a
-                                key={item.id}
-                                href={item.link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="vie-card vie-card--clickable"
-                            >
-                                {CardContent}
-                            </a>
-                        );
-                    }
-
-                    // 🧱 Carte statique
-                    return (
-                        <article key={item.id} className="vie-card">
-                            {CardContent}
-                        </article>
-                    );
-                })}
-            </div>
+                <span className="vie-preview__button">Découvrir mes engagements</span>
+            </Link>
         </section>
     );
 }

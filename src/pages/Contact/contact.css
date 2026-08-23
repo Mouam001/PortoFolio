@@ -1,5 +1,5 @@
 .contact {
-    padding: 72px 24px;
+    padding: 48px 24px;
 }
 
 .contact__container {
@@ -181,7 +181,7 @@
 
 @media (max-width: 900px) {
     .contact {
-        padding: 56px 20px;
+        padding: 38px 20px;
     }
 
     .contact__container {

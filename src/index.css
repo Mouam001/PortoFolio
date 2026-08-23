@@ -53,6 +53,12 @@ section[id] {
     scroll-margin-top: 104px;
 }
 
+@media (max-width: 860px) {
+    section[id] {
+        scroll-margin-top: 92px;
+    }
+}
+
 .section-kicker {
     display: inline-flex;
     align-items: center;

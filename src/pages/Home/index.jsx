@@ -1,6 +1,6 @@
 import HomeView from "./view";
 import profileImg from "../../assets/profile.jpg";
-import cvFile from "../../assets/CV_Mouammar.pdf";
+import cvFile from "../../assets/CV_Mouammar_folio.pdf";
 
 import About from "../About";
 import Formations from "../Formations";
